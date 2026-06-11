@@ -11,9 +11,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 <link rel="stylesheet" href="css/style.css" />
 <style>
-  /* Course-specific overrides */
+  /* Course-specific styles */
   .courses-hero {
-    padding: 160px 5% 100px;
+    padding: var(--spacing-4xl) var(--spacing-md);
     background: var(--off-white);
     text-align: center;
     min-height: 80vh;
@@ -27,16 +27,39 @@
     align-items: center; 
     justify-content: center; 
     border: 2px dashed var(--gray-200); 
-    border-radius: var(--radius-lg); 
+    border-radius: var(--radius-xl); 
     color: var(--text-muted); 
-    margin-top: 40px; 
-    background: white;
-    padding: 40px;
+    margin-top: var(--spacing-3xl); 
+    background: var(--white);
+    padding: var(--spacing-3xl);
     width: 100%;
+    transition: all var(--transition-base);
+  }
+  .placeholder-card:hover {
+    border-color: var(--primary-light);
+    background: var(--white);
+  }
+  .placeholder-icon {
+    font-size: 48px;
+    color: var(--primary);
+    margin-bottom: var(--spacing-lg);
+  }
+  .placeholder-text-main {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: var(--spacing-xs);
+  }
+  .placeholder-text-sub {
+    font-size: var(--font-size-sm);
+    color: var(--text-muted);
+  }
+  .placeholder-btn {
+    margin-top: var(--spacing-2xl);
   }
   @media (max-width: 768px) {
-    .courses-hero { padding-top: 120px; }
-    .placeholder-card { min-height: 300px; padding: 30px; }
+    .courses-hero { padding-top: 140px; }
+    .placeholder-card { min-height: 300px; padding: var(--spacing-2xl); }
   }
 </style>
 </head>
@@ -64,7 +87,7 @@
     <li><a href="index.html#contact">Contact</a></li>
   </ul>
   <a href="https://m.me/j/AbZOnZR2vl02426i/" class="nav-cta" target="_blank"><i class="fa-brands fa-facebook-messenger"></i> Join Now</a>
-  <button class="hamburger" id="hamburger" aria-label="Menu">
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
@@ -75,7 +98,7 @@
   <a href="courses.html" onclick="closeMobile()">Courses</a>
   <a href="index.html#join" onclick="closeMobile()">Who We Welcome</a>
   <a href="index.html#contact" onclick="closeMobile()">Contact</a>
-  <a href="https://m.me/j/AbZOnZR2vl02426i/" target="_blank" style="color:var(--green);font-weight:700;">Join the Community →</a>
+  <a href="https://m.me/j/AbZOnZR2vl02426i/" target="_blank" style="color:var(--primary);font-weight:700;">Join the Community →</a>
 </div>
 
 <!-- COURSE CONTENT -->
@@ -84,14 +107,14 @@
     <div class="reveal">
       <div class="section-label">Learning</div>
       <h2 class="section-title">Video Editing Masterclass</h2>
-      <center><p class="section-sub">Level up your editing skills with our upcoming professional course. Stay tuned for more updates!</p></center>
+      <p class="section-sub" style="margin-inline: auto;">Level up your editing skills with our upcoming professional course. Stay tuned for more updates!</p>
     </div>
     
     <div class="reveal placeholder-card">
-      <i class="fa-solid fa-person-digging" style="font-size: 48px; color: var(--green); margin-bottom: 20px;"></i>
-      <p style="font-size: 18px; font-weight: 500;">Course content is currently under development.</p>
-      <p style="font-size: 14px; margin-top: 10px;">We're working hard to bring you the best learning experience. Check back soon!</p>
-      <a href="index.html" class="btn-secondary" style="margin-top: 30px;">Return to Home</a>
+      <i class="fa-solid fa-person-digging placeholder-icon"></i>
+      <p class="placeholder-text-main">Course content is currently under development.</p>
+      <p class="placeholder-text-sub">We're working hard to bring you the best learning experience. Check back soon!</p>
+      <a href="index.html" class="btn-secondary placeholder-btn">Return to Home</a>
     </div>
   </div>
 </section>
@@ -105,10 +128,10 @@
         <strong>Green Guy Studio</strong>
       </div>
       <p>Your brand's creative weapon. Specializing in digital marketing, content creation, and web development since 2021.</p>
-      <div class="social-links" style="margin-top:16px;">
-        <a href="https://www.facebook.com/greenguydms/" target="_blank" class="social-btn" aria-label="Facebook" style="border-color:rgba(255,255,255,.15);color:rgba(255,255,255,.5);background:transparent;"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="https://m.me/j/AbZOnZR2vl02426i/" target="_blank" class="social-btn" aria-label="Messenger" style="border-color:rgba(255,255,255,.15);color:rgba(255,255,255,.5);background:transparent;"><i class="fa-brands fa-facebook-messenger"></i></a>
-        <a href="https://discord.gg/hYRzsxUc" target="_blank" class="social-btn" aria-label="Discord" style="border-color:rgba(255,255,255,.15);color:rgba(255,255,255,.5);background:transparent;"><i class="fa-brands fa-discord"></i></a>
+      <div class="social-links">
+        <a href="https://www.facebook.com/greenguydms/" target="_blank" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://m.me/j/AbZOnZR2vl02426i/" target="_blank" class="social-btn" aria-label="Messenger"><i class="fa-brands fa-facebook-messenger"></i></a>
+        <a href="https://discord.gg/hYRzsxUc" target="_blank" class="social-btn" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
       </div>
     </div>
     <div class="footer-links">
@@ -135,10 +158,11 @@
   </div>
   <div class="footer-bottom">
     <span>© 2025 Greenguy Digital Marketing Studio. All rights reserved.</span>
-    <span>Made with <i class="fa-solid fa-heart" style="color:#28a764;"></i> in Santa Cruz, Laguna</span>
+    <span>Made with <i class="fa-solid fa-heart" style="color:var(--primary-light);"></i> in Santa Cruz, Laguna</span>
   </div>
 </footer>
 
 <script src="js/script.js"></script>
+<script src="js/cursor.js"></script>
 </body>
 </html>

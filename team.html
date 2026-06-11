@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team | GDMS Community</title>
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="loading">
+    <!-- LOADER -->
+    <div id="loader" class="loader-wrapper">
+        <div class="loader-content">
+            <img src="assets/images/logo.jpg" alt="Logo" class="loader-logo">
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <a class="nav-logo" href="index.html">
+            <img src="assets/images/logo.jpg" alt="Green Guy Studio Logo">
+            <div class="nav-logo-text">Green Guy Studio <span>Digital Marketing</span></div>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#community">Community</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="team.html" class="active">Our Team</a></li>
+            <li><a href="index.html#join">Who We Welcome</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <a href="https://m.me/j/AbZOnZR2vl02426i/" class="nav-cta" target="_blank"><i class="fa-brands fa-facebook-messenger"></i> Join Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html#services" onclick="closeMobile()">Services</a>
+        <a href="index.html#community" onclick="closeMobile()">Community</a>
+        <a href="courses.html" onclick="closeMobile()">Courses</a>
+        <a href="team.html" onclick="closeMobile()">Our Team</a>
+        <a href="index.html#join" onclick="closeMobile()">Who We Welcome</a>
+        <a href="index.html#contact" onclick="closeMobile()">Contact</a>
+        <a href="https://m.me/j/AbZOnZR2vl02426i/" target="_blank" style="color:var(--primary);font-weight:700;">Join the Community →</a>
+    </div>
+
+    <!-- TEAM HERO -->
+    <section class="hero" id="home" style="min-height: 50vh;">
+        <div class="hero-inner max-w" style="display: block;">
+            <div class="reveal" style="text-align: center;">
+                <div class="section-label" style="justify-content: center;">Our Team</div>
+                <h1 style="font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1rem;">Meet The <em>Dream Team</em></h1>
+                <p style="font-size: var(--font-size-lg); color: var(--text-muted); max-width: 600px; margin: 0 auto; line-height: 1.8;">
+                    The passionate individuals behind Green Guy Studio, dedicated to helping you and your brand succeed.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM GRID -->
+    <section class="team">
+        <div class="max-w">
+            <div class="team-grid">
+                
+                <!-- TEAM MEMBER 1 - TEMPLATE -->
+                <div class="team-card reveal">
+                    <div class="team-card-inner">
+                        
+                        <!-- FRONT OF CARD -->
+                        <div class="team-card-front">
+                            <div class="team-photo">
+                                <!-- OPTION 1: Use real photo -->
+                                <!-- <img src="assets/images/team-member-1.jpg" alt="Green Guy"> -->
+                                <!-- OPTION 2: Placeholder initials -->
+                                <span class="team-photo-placeholder">GG</span>
+                            </div>
+                            <div class="team-front-content">
+                                <h3>Green Guy</h3>
+                                <div class="team-role">Founder & Lead Creative</div>
+                                <p class="team-card-small">Hover to learn more</p>
+                            </div>
+                        </div>
+
+                        <!-- BACK OF CARD -->
+                        <div class="team-card-back">
+                            <p class="team-bio">
+                                The visionary behind Green Guy Studio — passionate about helping creatives thrive and brands grow through digital marketing.
+                            </p>
+                            <div class="team-social">
+                                <a href="https://www.facebook.com/greenguydms/" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="mailto:greenguy.videoedits@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                                <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- TEAM MEMBER 2 - TEMPLATE -->
+                <div class="team-card reveal">
+                    <div class="team-card-inner">
+                        
+                        <!-- FRONT OF CARD -->
+                        <div class="team-card-front">
+                            <div class="team-photo" style="background: linear-gradient(135deg, #e65c00 0%, #ff8c00 100%);">
+                                <!-- OPTION 1: Use real photo -->
+                                <!-- <img src="assets/images/team-member-2.jpg" alt="Video Editor"> -->
+                                <!-- OPTION 2: Placeholder initials -->
+                                <span class="team-photo-placeholder">VE</span>
+                            </div>
+                            <div class="team-front-content">
+                                <h3>Video Editor</h3>
+                                <div class="team-role">Senior Video Editor</div>
+                                <p class="team-card-small">Hover to learn more</p>
+                            </div>
+                        </div>
+
+                        <!-- BACK OF CARD -->
+                        <div class="team-card-back" style="background: linear-gradient(135deg, #e65c00 0%, #ff8c00 100%);">
+                            <p class="team-bio">
+                                Crafting engaging video content that captures attention and tells your brand's story in the most compelling way.
+                            </p>
+                            <div class="team-social">
+                                <a href="#" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" target="_blank" aria-label="Vimeo"><i class="fa-brands fa-vimeo-v"></i></a>
+                                <a href="#" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- TEAM MEMBER 3 - TEMPLATE -->
+                <div class="team-card reveal">
+                    <div class="team-card-inner">
+                        
+                        <!-- FRONT OF CARD -->
+                        <div class="team-card-front">
+                            <div class="team-photo" style="background: linear-gradient(135deg, #4a148c 0%, #7b1fa2 100%);">
+                                <!-- OPTION 1: Use real photo -->
+                                <!-- <img src="assets/images/team-member-3.jpg" alt="Graphic Designer"> -->
+                                <!-- OPTION 2: Placeholder initials -->
+                                <span class="team-photo-placeholder">GD</span>
+                            </div>
+                            <div class="team-front-content">
+                                <h3>Graphic Designer</h3>
+                                <div class="team-role">Lead Graphic Designer</div>
+                                <p class="team-card-small">Hover to learn more</p>
+                            </div>
+                        </div>
+
+                        <!-- BACK OF CARD -->
+                        <div class="team-card-back" style="background: linear-gradient(135deg, #4a148c 0%, #7b1fa2 100%);">
+                            <p class="team-bio">
+                                Creating eye-catching visuals and branding materials that make your brand stand out from the competition.
+                            </p>
+                            <div class="team-social">
+                                <a href="#" target="_blank" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+                                <a href="#" target="_blank" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+                                <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- TEAM MEMBER 4 - TEMPLATE (ADD MORE BY DUPLICATING THIS BLOCK) -->
+                <div class="team-card reveal">
+                    <div class="team-card-inner">
+                        
+                        <!-- FRONT OF CARD -->
+                        <div class="team-card-front">
+                            <div class="team-photo" style="background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);">
+                                <!-- OPTION 1: Use real photo -->
+                                <!-- <img src="assets/images/team-member-4.jpg" alt="Web Developer"> -->
+                                <!-- OPTION 2: Placeholder initials -->
+                                <span class="team-photo-placeholder">WD</span>
+                            </div>
+                            <div class="team-front-content">
+                                <h3>Web Developer</h3>
+                                <div class="team-role">Full Stack Developer</div>
+                                <p class="team-card-small">Hover to learn more</p>
+                            </div>
+                        </div>
+
+                        <!-- BACK OF CARD -->
+                        <div class="team-card-back" style="background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%);">
+                            <p class="team-bio">
+                                Building fast, responsive, and beautiful websites that convert visitors into loyal customers.
+                            </p>
+                            <div class="team-social">
+                                <a href="#" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                                <a href="#" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="#" target="_blank" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section style="padding: var(--spacing-4xl) var(--spacing-md);">
+        <div class="cta-banner max-w reveal" style="padding: var(--spacing-3xl) var(--spacing-2xl);">
+            <h2 style="font-size: clamp(1.5rem, 3vw, 2.25rem); margin-bottom: var(--spacing-sm);">Join Our Team!</h2>
+            <p style="font-size: var(--font-size-base); margin-bottom: var(--spacing-xl);">
+                We're always looking for talented creatives to join our growing family.
+            </p>
+            <div class="cta-btns">
+                <a href="index.html#contact" class="btn-white"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+                <a href="index.html" class="btn-outline-white"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="logo-row">
+                    <img src="assets/images/logo.jpg" alt="Green Guy Studio Logo">
+                    <strong>Green Guy Studio</strong>
+                </div>
+                <p>Your brand's creative weapon. Specializing in digital marketing, content creation, and web development since 2021.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/greenguydms/" target="_blank" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://m.me/j/AbZOnZR2vl02426i/" target="_blank" class="social-btn" aria-label="Messenger"><i class="fa-brands fa-facebook-messenger"></i></a>
+                    <a href="https://discord.gg/hYRzsxUc" target="_blank" class="social-btn" aria-label="Discord"><i class="fa-brands fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="index.html#services">Social Ads</a></li>
+                    <li><a href="index.html#services">Photo & Video Shoots</a></li>
+                    <li><a href="index.html#services">Video Editing</a></li>
+                    <li><a href="index.html#services">Graphic Design</a></li>
+                    <li><a href="index.html#services">Web Development</a></li>
+                    <li><a href="index.html#services">SEO</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Community</h4>
+                <ul>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="https://m.me/j/AbZOnZR2vl02426i/" target="_blank">Group Chat</a></li>
+                    <li><a href="https://discord.gg/hYRzsxUc" target="_blank">Discord Server</a></li>
+                    <li><a href="https://www.facebook.com/greenguydms/" target="_blank">Facebook Page</a></li>
+                    <li><a href="mailto:greenguy.videoedits@gmail.com">Email Us</a></li>
+                    <li><a href="index.html#join">Who We Welcome</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2025 Greenguy Digital Marketing Studio. All rights reserved.</span>
+            <span>Made with <i class="fa-solid fa-heart" style="color:var(--primary-light);"></i> in Santa Cruz, Laguna</span>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cursor.js"></script>
+</body>
+</html>
